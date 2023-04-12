@@ -1,0 +1,7 @@
+1. Patikrinti ar specifinis dalykas (Reikšmė) yra "masyve".
+
+tikrinama_masina = input("Įveskite tikrinamos mašinos modelį")
+if tikrinama_masina in [masina['modelis'] for masina in automobiliai.values()]:
+    print(tikrinama_masina," egzistuoja duomenų bazėje")
+else:
+    print(tikrinama_masina," nėra duomenų bazėje")
