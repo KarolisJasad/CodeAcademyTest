@@ -28,29 +28,29 @@ if Pasirinkimas == "a": # Paleidžiame žaidimą pagal pasirinkimą
     print("Šis skaičiuotuvas priima tik du skaičius, paprašysiu įvesti po vieną atskirai")
     while True:
         try: # Naudojame Try, kad galėtume patikrinti ar skaičius tinkamai įvestas
-           skaicius1 = float(input("Įveskite pirmą skaičių: "))
-           skaicius2 = float(input("Įveskite antrą skaičių: "))
-           operatorius = input("Įveskite norimą operatorių (+, -, /, *, or **): ")
-           if operatorius in operatoriai:
-               if operatorius == '+':
-                    print(skaicius1 + skaicius2)  
-               elif operatorius == '-':
-                    print(skaicius1 - skaicius2)
-               elif operatorius == '/':
-                    while skaicius1 == 0 or skaicius2 == 0:
-                        print("Dalyba iš 0 negalima")
-                        skaicius1 = float(input("Įveskite pirmą skaičių: "))
-                        skaicius2 = float(input("Įveskite antrą skaičių: "))
-                        print(skaicius1 / skaicius2)                        
-               elif operatorius == '*':
-                    print(skaicius1 * skaicius2)                    
-               elif operatorius == '**':
-                    print(skaicius1 ** skaicius2)                   
-               break
-           else:
-            print("Neteisingai pasirinktas operatorius, programa perkraunama, įveskite viską iš naujo")
+            skaicius1 = float(input("Įveskite pirmą skaičių: "))
+            skaicius2 = float(input("Įveskite antrą skaičių: "))
+            operatorius = input("Įveskite norimą operatorių (+, -, /, *, or **): ")
+            if operatorius in operatoriai:
+                if operatorius == '+':
+                     print(skaicius1 + skaicius2)  
+                elif operatorius == '-':
+                     print(skaicius1 - skaicius2)
+                elif operatorius == '/':
+                     while skaicius1 == 0 or skaicius2 == 0:
+                         print("Dalyba iš 0 negalima")
+                         skaicius1 = float(input("Įveskite pirmą skaičių: "))
+                         skaicius2 = float(input("Įveskite antrą skaičių: "))
+                         print(skaicius1 / skaicius2)                        
+                elif operatorius == '*':
+                     print(skaicius1 * skaicius2)                    
+                elif operatorius == '**':
+                     print(skaicius1 ** skaicius2)                   
+                break
+            else:
+                print("Neteisingai pasirinktas operatorius, programa perkraunama, įveskite viską iš naujo")
         except ValueError:  # Patikrina ar vietoj skaičiaus nėra įvestas kitoks simbolis
-            print("Neteisingai įvestas skaičius, programa perkraunama, įveskite viską iš naujo")
+                print("Neteisingai įvestas skaičius, programa perkraunama, įveskite viską iš naujo")
 elif Pasirinkimas == "b":
     print("Pasirinkote programą šilta/šalta, spėsime skaičių nuo 0 iki 100")
     while True:
