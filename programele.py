@@ -34,10 +34,10 @@ if Pasirinkimas == "a": # Paleidžiame žaidimą pagal pasirinkimą
            if operatorius in operatoriai:
                if operatorius == '+':
                     print(skaicius1 + skaicius2)
-                    
+  
                elif operatorius == '-':
                     print(skaicius1 - skaicius2)
-                    
+
                elif operatorius == '/':
                     while skaicius1 == 0 or skaicius2 == 0:
                         print("Dalyba iš 0 negalima")
