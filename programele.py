@@ -1,11 +1,13 @@
 import sys
 import random
 
+randomskaicius = random.randint(1, 100)
+bandymai = 0
+
 print("Sveiki, pasirinkite norimą programą:")
 print("A: Skaičiuotuvas")
 print("B: Žaidimas `Šilta/Šalta`")
-randomskaicius = random.randint(1, 100)
-bandymai = 0
+
 while bandymai < 2:  # Nustatome, kad vartotojas gali spėti tik du kartus
     Pasirinkimas = input("Įveskite norimos programos raidę: ")
     Pasirinkimas = Pasirinkimas.lower() # Konvertuojame atsakymą į mažąsias raides, del sekančio IF patikrinimo
