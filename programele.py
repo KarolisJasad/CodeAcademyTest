@@ -48,11 +48,10 @@ if Pasirinkimas == "a": # Paleidžiame žaidimą pagal pasirinkimą
         except ValueError:  # Patikrina ar vietoj skaičiaus nėra įvestas kitoks simbolis
             print("Neteisingai įvestas skaičius, programa perkraunama, įveskite viską iš naujo")
 elif Pasirinkimas == "b":
-    print("Spėkite skaičių nuo 0 iki 100")
-
+    print("Pasirinkote programą šilta/šalta, spėsime skaičių nuo 0 iki 100")
 while True:
-    spejimas = input("Įveskite savo spėjima: ")
-    
+    spejimas = input("Įveskite savo spėjimą: ")
+
     try:
         spejimas = int(spejimas)
     except ValueError:
