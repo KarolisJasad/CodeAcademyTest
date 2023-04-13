@@ -38,10 +38,10 @@ if Pasirinkimas == "a": # Paleidžiame žaidimą pagal pasirinkimą
                      print(skaicius1 - skaicius2)
                 elif operatorius == '/':
                      while skaicius1 == 0 or skaicius2 == 0:
-                         print("Dalyba iš 0 negalima")
-                         skaicius1 = float(input("Įveskite pirmą skaičių: "))
-                         skaicius2 = float(input("Įveskite antrą skaičių: "))
-                         print(skaicius1 / skaicius2)                        
+                        print("Dalyba iš 0 negalima")
+                        skaicius1 = float(input("Įveskite pirmą skaičių: "))
+                        skaicius2 = float(input("Įveskite antrą skaičių: "))
+                        print(skaicius1 / skaicius2)                        
                 elif operatorius == '*':
                      print(skaicius1 * skaicius2)                    
                 elif operatorius == '**':
