@@ -3,6 +3,7 @@ import random
 
 randomskaicius = random.randint(1, 100)
 bandymai = 0
+operatoriai = ['+', '-', '/', '*', '**']
 
 print("Sveiki, pasirinkite norimą programą:")
 print("A: Skaičiuotuvas")
@@ -30,20 +31,25 @@ if Pasirinkimas == "a": # Paleidžiame žaidimą pagal pasirinkimą
            skaicius1 = float(input("Įveskite pirmą skaičių: "))
            skaicius2 = float(input("Įveskite antrą skaičių: "))
            operatorius = input("Įveskite norimą operatorių (+, -, /, *, or **): ")
-           if operatorius in ['+', '-', '/', '*', '**']:
+           if operatorius in operatoriai:
                if operatorius == '+':
                     print(skaicius1 + skaicius2)
+                    sys.exit()
                elif operatorius == '-':
                     print(skaicius1 - skaicius2)
+                    sys.exit()
                elif operatorius == '/':
                     while skaicius1 == 0 or skaicius2 == 0:
                         print("Dalyba iš 0 negalima")
                         sys.exit()
                     print(skaicius1 / skaicius2)
+                    sys.exit()
                elif operatorius == '*':
                     print(skaicius1 * skaicius2)
+                    sys.exit()
                elif operatorius == '**':
                     print(skaicius1 ** skaicius2)
+                    sys.exit()
                break
            else:
             print("Neteisingai pasirinktas operatorius, programa perkraunama, įveskite viską iš naujo")
