@@ -200,17 +200,17 @@
 # 4 uzduotis
 
 # maisto_sarasas.append('bandeles')
-# # print(maisto_sarasas)
+# print(maisto_sarasas)
 # maisto_sarasas.insert(3, 'duona')
-# # print(maisto_sarasas)
+# print(maisto_sarasas)
 # maisto_sarasas[1] = 'kebabas'
-# # print(maisto_sarasas)
+# print(maisto_sarasas)
 # maisto_sarasas.pop(0)
-# # print(maisto_sarasas)
+# print(maisto_sarasas)
 # maisto_sarasas.pop(2)
-# # print(maisto_sarasas)
+# print(maisto_sarasas)
 # print(maisto_sarasas.index('blynai'))
-# # print(maisto_sarasas)
+# print(maisto_sarasas)
 # maisto_sarasas.reverse()
 # print(maisto_sarasas)
 
