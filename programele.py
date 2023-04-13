@@ -27,22 +27,22 @@ if Pasirinkimas == "a":
            skaicius2 = float(input("Įveskite antrą skaičių: "))
            operatorius = input("Įveskite norimą operatorių (+, -, /, *, or **): ")
            if operatorius in ['+', '-', '/', '*', '**']:
+               if operatorius == '+':
+                    print(skaicius1 + skaicius2)
+               elif operatorius == '-':
+                    print(skaicius1 - skaicius2)
+               elif operatorius == '/':
+                    while skaicius1 == 0 or skaicius2 == 0:
+                        print("Dalyba iš 0 negalima")
+                        sys.exit()
+                    print(skaicius1 / skaicius2)
+               elif operatorius == '*':
+                    print(skaicius1 * skaicius2)
+               elif operatorius == '**':
+                    print(skaicius1 ** skaicius2)
                break
            else:
             print("Neteisingai pasirinktas operatorius, programa perkraunama, įveskite viską iš naujo")
         except ValueError:
             print("Neteisingai įvestas skaičius, programa perkraunama, įveskite viską iš naujo")
         
-if operatorius == '+':
-    print(skaicius1 + skaicius2)
-elif operatorius == '-':
-    print(skaicius1 - skaicius2)
-elif operatorius == '/':
-    while skaicius1 == 0 or skaicius2 == 0:
-        print("Dalyba iš 0 negalima")
-        sys.exit()
-    print(skaicius1 / skaicius2)
-elif operatorius == '*':
-    print(skaicius1 * skaicius2)
-elif operatorius == '**':
-    print(skaicius1 ** skaicius2)
