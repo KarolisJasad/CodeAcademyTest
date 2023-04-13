@@ -33,24 +33,19 @@ if Pasirinkimas == "a": # Paleidžiame žaidimą pagal pasirinkimą
            operatorius = input("Įveskite norimą operatorių (+, -, /, *, or **): ")
            if operatorius in operatoriai:
                if operatorius == '+':
-                    print(skaicius1 + skaicius2)
-  
+                    print(skaicius1 + skaicius2)  
                elif operatorius == '-':
                     print(skaicius1 - skaicius2)
-
                elif operatorius == '/':
                     while skaicius1 == 0 or skaicius2 == 0:
                         print("Dalyba iš 0 negalima")
                         skaicius1 = float(input("Įveskite pirmą skaičių: "))
                         skaicius2 = float(input("Įveskite antrą skaičių: "))
-                        print(skaicius1 / skaicius2)
-                        
+                        print(skaicius1 / skaicius2)                        
                elif operatorius == '*':
-                    print(skaicius1 * skaicius2)
-                    
+                    print(skaicius1 * skaicius2)                    
                elif operatorius == '**':
-                    print(skaicius1 ** skaicius2)
-                    
+                    print(skaicius1 ** skaicius2)                   
                break
            else:
             print("Neteisingai pasirinktas operatorius, programa perkraunama, įveskite viską iš naujo")
@@ -60,13 +55,10 @@ elif Pasirinkimas == "b":
     print("Pasirinkote programą šilta/šalta, spėsime skaičių nuo 0 iki 100")
     while True:
         spejimas = input("Įveskite savo spėjimą: ")
-
         try:
             spejimas = int(spejimas)
         except ValueError:
             print("Blogai įvestas skaičius, įveskite teisingą skaičių.")
-            continue
-
         if spejimas == randomskaicius:
             print("Sveikinu, atspėjote skaičių.")
             break
